@@ -23,7 +23,6 @@ class _secondState extends State<second> {
   TextEditingController txtlang = TextEditingController();
   TextEditingController txtemail = TextEditingController();
   TextEditingController txtdet = TextEditingController();
-  TextEditingController txtloc = TextEditingController();
 
   var txtkey = GlobalKey<FormState>();
   File f1 = File("");
@@ -78,6 +77,16 @@ class _secondState extends State<second> {
                       ),
                     ),
                   ),
+                  SizedBox(height: 20,),
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.only(left: 20,right: 20),
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Center(child: Text("Personal Details",style: TextStyle(color: Colors.black,fontSize: 25),),),
+                  ),
                   SizedBox(height: 10,),
                   TextFormField(
                     controller: txtname,
@@ -86,11 +95,11 @@ class _secondState extends State<second> {
                      fillColor: Colors.red,
                       hoverColor: Colors.orange,
                       prefixIcon: Icon(Icons.person),
-                      labelText: "Personal Details",
+                      labelText: "Name",
                     ),
                     validator: (value) {
                       if (value!.isEmpty) {
-                        return "Enter Your Details";
+                        return "Enter Your Name";
                       } else {
                         return null;
                       }
@@ -143,23 +152,6 @@ class _secondState extends State<second> {
                     height: 20,
                   ),
                   TextFormField(
-                    controller: txtloc,
-                    decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.location_on),
-                      labelText: "Location",
-                    ),
-                    validator: (value) {
-                      if (value!.isEmpty) {
-                        return "Enter Your Location";
-                      } else {
-                        return null;
-                      }
-                    },
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  TextFormField(
                     controller: txtemail,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.email),
@@ -172,6 +164,16 @@ class _secondState extends State<second> {
                         return null;
                       }
                     },
+                  ),
+                  SizedBox(height: 20,),
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.only(left: 20,right: 20),
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                     borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Center(child: Text("Skills",style: TextStyle(color: Colors.black,fontSize: 25),),),
                   ),
                   SizedBox(
                     height: 20,
@@ -209,6 +211,16 @@ class _secondState extends State<second> {
                       }
                     },
                   ),
+                  SizedBox(height: 20,),
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.only(left: 20,right: 20),
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Center(child: Text("Experience",style: TextStyle(color: Colors.black,fontSize: 25),),),
+                  ),
                   SizedBox(
                     height: 20,
                   ),
@@ -227,12 +239,22 @@ class _secondState extends State<second> {
                       }
                     },
                   ),
+                  SizedBox(height: 20,),
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.only(left: 20,right: 20),
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Center(child: Text("Your Details",style: TextStyle(color: Colors.black,fontSize: 25),),),
+                  ),
                   SizedBox(
                     height: 20,
                   ),
                   TextFormField(
                     controller: txtdet,
-                    maxLines: 15,
+                    maxLines: 3,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.details),
                       labelText: "Details",
@@ -240,6 +262,34 @@ class _secondState extends State<second> {
                     validator: (value) {
                       if (value!.isEmpty) {
                         return "Enter Your Details";
+                      } else {
+                        return null;
+                      }
+                    },
+                  ),
+                  SizedBox(height: 20,),
+                  Container(
+                    height: 50,
+                    margin: EdgeInsets.only(left: 20,right: 20),
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Center(child: Text("Langauges",style: TextStyle(color: Colors.black,fontSize: 25),),),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TextFormField(
+                    maxLines: 3,
+                    controller: txtlang,
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.laptop_windows_sharp),
+                      labelText: "Langauge",
+                    ),
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return "Enter Your Langauges";
                       } else {
                         return null;
                       }
@@ -292,28 +342,12 @@ class _secondState extends State<second> {
                       });
                     },items: [
                     DropdownMenuItem(child: Text("Select City"),value: 'Select City',),
-                    DropdownMenuItem(child: Text("surat"),value: 'surat',),
-                    DropdownMenuItem(child: Text("Goa"),value: 'Goa',),
-                    DropdownMenuItem(child: Text("Mumbai"),value: 'Mumbai',),
+                    DropdownMenuItem(child: Text("surat,Gujarat"),value: 'surat',),
+                    DropdownMenuItem(child: Text("Goa,"),value: 'Goa',),
+                    DropdownMenuItem(child: Text("Mumbai,Maharastra"),value: 'Mumbai',),
                     DropdownMenuItem(child: Text("Delhi"),value: 'Delhi',),
-                    DropdownMenuItem(child: Text("Amdavad"),value: 'Amdavad',),
+                    DropdownMenuItem(child: Text("Amdavad,Gujarat"),value: 'Amdavad',),
                   ],
-                  ),
-                  SizedBox(height: 15,),
-                  TextFormField(
-                    maxLines: 3,
-                    controller: txtlang,
-                    decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.laptop_windows_sharp),
-                      labelText: "Langauge",
-                    ),
-                    validator: (value) {
-                      if (value!.isEmpty) {
-                        return "Enter Your Langauges";
-                      } else {
-                        return null;
-                      }
-                    },
                   ),
                   SizedBox(height: 15,),
                   ElevatedButton(
@@ -321,7 +355,7 @@ class _secondState extends State<second> {
                         if (txtkey.currentState!.validate() == true) {
                          Modeldata data = Modeldata(name: txtname.text,
                          edu: txtedu.text,mno: txtmob.text,skil: txtskil.text,pskil: txtpskil.text,exp: txtexp.text,img: f1.path,
-                           gmail: txtemail.text,det: txtdet.text,lang: txtlang.text,loc: txtloc.text,f1: f1.path);
+                           gmail: txtemail.text,det: txtdet.text,lang: txtlang.text,f1: f1.path,select: select,selectcity: selectcity);
 
                           Navigator.pushNamed(context, 'rd', arguments: data);
                         }
