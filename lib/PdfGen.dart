@@ -39,6 +39,8 @@ async{
                         pw.SizedBox(height: 15,),
                         pw.Container(alignment: pw.Alignment.center,child: pw.Text("Contact",style: pw.TextStyle(color: PdfColors.white,fontWeight: pw.FontWeight.bold,fontSize: 30),)),
                         pw.SizedBox(height: 15,),
+                        pw.Text("${data.selectcity}",style: pw.TextStyle(color: PdfColors.white,fontSize: 22),),
+                        pw.SizedBox(height: 15,),
                         pw.Text("${data.gmail}",style: pw.TextStyle(color: PdfColors.white,fontSize: 18),),
                         pw.SizedBox(height: 15,),
                         pw.Text("${data.mno}",style: pw.TextStyle(color: PdfColors.white,fontSize: 22),),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:resume/Modalclass.dart';
+import 'package:resume/Pdf2.dart';
 
 class resume2 extends StatefulWidget {
   const resume2({Key? key}) : super(key: key);
@@ -24,8 +25,8 @@ class _resume2State extends State<resume2> {
             title: Text("Resume",style: TextStyle(fontSize: 30,color: Colors.amber,fontWeight: FontWeight.bold),),
             actions: [
               IconButton(onPressed: (){
-
-              }, icon: Icon(Icons.download),),
+              Pdf2(r2);
+              }, icon: Icon(Icons.download,color: Colors.black,),),
             ],
           ),
           body: Container(
@@ -89,7 +90,7 @@ class _resume2State extends State<resume2> {
                             fontSize: 28)),
                       ),
                       SizedBox(width: 20,),
-                      Text("${r2.loc}", style: TextStyle(color: Colors.black, fontSize: 22),),
+                      Text("${r2.selectcity}", style: TextStyle(color: Colors.black, fontSize: 22),),
                     ],
                   ),
                   Container(
@@ -139,9 +140,34 @@ class _resume2State extends State<resume2> {
                     color: Colors.black,
                   ),
                   SizedBox(height: 10,),
-                  Align(
-                      alignment: Alignment.center,child: Text("${r2.det}", style: TextStyle(color: Colors.black, fontSize: 22),)),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text("${r2.det}", style: TextStyle(color: Colors.black, fontSize: 22),),
+                      ],
+                    ),
+                  ),
                   SizedBox(height: 10,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("Gender",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
+                      Text("(",style: TextStyle(fontSize: 27),),
+                      Icon(Icons.male,size: 30,),
+                      Text(")",style: TextStyle(fontSize: 27),),
+                    ],
+                  ),
+                  Container(
+                    width: double.infinity,
+                    height: 1,
+                    color: Colors.black,
+                  ),
+                  SizedBox(height: 15,),
+                  Text("${r2.select}",style: TextStyle(
+                      color: Colors.black, fontSize: 18)),
+                  SizedBox(height: 15,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -204,6 +230,7 @@ class _resume2State extends State<resume2> {
                   SizedBox(height: 10,),
                   Align(
                       alignment: Alignment.center,child: Text("${r2.lang}", style: TextStyle(color: Colors.black, fontSize: 22),)),
+                  SizedBox(height: 10,)
                 ],
               ),
             ),

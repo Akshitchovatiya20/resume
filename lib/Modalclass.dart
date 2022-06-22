@@ -12,7 +12,8 @@ class Modeldata{
   String? gmail;
   String? det;
   String? lang;
-  String? loc;
+  String? select;
+  String? selectcity;
   Modeldata({
     this.name,
     this.edu,
@@ -24,7 +25,8 @@ class Modeldata{
     this.gmail,
     this.det,
     this.lang,
-    this.loc,
+    this.select,
+    this.selectcity,
     f1
   });
 

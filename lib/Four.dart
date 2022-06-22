@@ -54,7 +54,7 @@ class _fourState extends State<four> {
                           height: 100,
                           width: 100,
                           child: CircleAvatar(
-                            backgroundImage: FileImage(File(m1.f1.toString())),
+                            backgroundImage: FileImage(File(m1.f1.path)),
                           ),
                         ),
                       ),
@@ -67,7 +67,7 @@ class _fourState extends State<four> {
                           fontWeight: FontWeight.bold,
                           fontSize: 30),)),
                       SizedBox(height: 15,),
-                      Text("${m1.loc}", style: TextStyle(color: Colors.white,
+                      Text("${m1.selectcity}", style: TextStyle(color: Colors.white,
                           fontSize: 18),),
                       SizedBox(height: 15,),
                       Text("${m1.gmail}", style: TextStyle(color: Colors.white,
@@ -102,6 +102,24 @@ class _fourState extends State<four> {
                           ),
                           SizedBox(height: 15,),
                           Text("${m1.edu}", style: TextStyle(
+                              color: Colors.black, fontSize: 18)),
+                          SizedBox(height: 20,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text("Gender",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
+                              Text("(",style: TextStyle(fontSize: 27),),
+                              Icon(Icons.male,size: 30,),
+                              Text(")",style: TextStyle(fontSize: 27),),
+                            ],
+                          ),
+                          Container(
+                            width: double.infinity,
+                            height: 1,
+                            color: Colors.black,
+                          ),
+                          SizedBox(height: 15,),
+                          Text("${m1.select}",style: TextStyle(
                               color: Colors.black, fontSize: 18)),
                           SizedBox(height: 20,),
                           Text(
