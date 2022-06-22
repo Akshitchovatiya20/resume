@@ -19,6 +19,7 @@ class Modeldata{
     this.mno,
     this.skil,
     this.pskil,
+    this.img,
     this.exp,
     this.gmail,
     this.det,

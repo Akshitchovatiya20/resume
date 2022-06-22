@@ -3,6 +3,7 @@ import 'package:resume/First.dart';
 import 'package:resume/Four.dart';
 import 'package:resume/Home.dart';
 import 'package:resume/MyApp.dart';
+import 'package:resume/Resume2.dart';
 import 'package:resume/Second.dart';
 import 'package:resume/Third.dart';
 
@@ -19,6 +20,7 @@ void main()
         'nd': (context) => second(),
         'rd': (context) => third(),
         'fr': (context) => four(),
+        'r2': (context) => resume2(),
       },
     ),
   );

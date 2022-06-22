@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:resume/Modalclass.dart';
 import 'package:resume/PdfGen.dart';
@@ -13,10 +15,7 @@ class four extends StatefulWidget {
 class _fourState extends State<four> {
   @override
   Widget build(BuildContext context) {
-    Modeldata m1 = ModalRoute
-        .of(context)!
-        .settings
-        .arguments as Modeldata;
+    Modeldata m1 = ModalRoute.of(context)!.settings.arguments as Modeldata;
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -55,7 +54,7 @@ class _fourState extends State<four> {
                           height: 100,
                           width: 100,
                           child: CircleAvatar(
-                            backgroundImage: FileImage(m1.f1),
+                            backgroundImage: FileImage(File(m1.f1.toString())),
                           ),
                         ),
                       ),
@@ -67,6 +66,9 @@ class _fourState extends State<four> {
                         "Contact", style: TextStyle(color: Colors.white,
                           fontWeight: FontWeight.bold,
                           fontSize: 30),)),
+                      SizedBox(height: 15,),
+                      Text("${m1.loc}", style: TextStyle(color: Colors.white,
+                          fontSize: 18),),
                       SizedBox(height: 15,),
                       Text("${m1.gmail}", style: TextStyle(color: Colors.white,
                           fontSize: 18),),
