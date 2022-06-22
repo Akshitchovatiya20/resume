@@ -34,12 +34,12 @@ class _thirdState extends State<third> {
               GestureDetector(
                 onTap: (){
                   //PdfGen(m2);
-                  Navigator.pushNamed(context, 'fr',arguments: m2);
+                  Navigator.pushNamed(context, 'r2',arguments: m2);
                 },
                 child: Container(
                   alignment: Alignment.center,
-                    height: 300,
-                    width: 300,
+                    height: 270,
+                    width: 270,
                   color: Colors.grey.shade700,
                   child: Image.asset("assets/image/re1.png"),
                    // child: Image.asset()

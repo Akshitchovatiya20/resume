@@ -320,8 +320,9 @@ class _secondState extends State<second> {
                       onPressed: () {
                         if (txtkey.currentState!.validate() == true) {
                          Modeldata data = Modeldata(name: txtname.text,
-                         edu: txtedu.text,mno: txtmob.text,skil: txtskil.text,pskil: txtpskil.text,exp: txtexp.text,
-                           gmail: txtemail.text,det: txtdet.text,lang: txtlang.text,loc: txtloc.text,f1:f1);
+                         edu: txtedu.text,mno: txtmob.text,skil: txtskil.text,pskil: txtpskil.text,exp: txtexp.text,img: f1.path,
+                           gmail: txtemail.text,det: txtdet.text,lang: txtlang.text,loc: txtloc.text,f1: f1.path);
+
                           Navigator.pushNamed(context, 'rd', arguments: data);
                         }
                       },
@@ -347,8 +348,6 @@ class _secondState extends State<second> {
                         }, child: Text("PreFilled"),
                           style: ElevatedButton.styleFrom(primary: Colors.green),
                         ),
-                        ElevatedButton(onPressed: (){
-                        }, child: Text("Pdf"))
                       ],
                     ),
                 ],
