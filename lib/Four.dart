@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:resume/Modalclass.dart';
@@ -54,7 +53,7 @@ class _fourState extends State<four> {
                           height: 100,
                           width: 100,
                           child: CircleAvatar(
-                            backgroundImage: FileImage(File(m1.f1.path)),
+                            backgroundImage: FileImage(m1.f1),
                           ),
                         ),
                       ),

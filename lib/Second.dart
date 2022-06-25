@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -32,9 +33,12 @@ class _secondState extends State<second> {
   String selectcity = 'Select City';
   String select = 'Male';
   String name = '';
+  double i = 0;
 
   @override
   Widget build(BuildContext context) {
+    Timer(Duration(seconds: 3),(){
+    });
     return Form(
       key: txtkey,
       child: SafeArea(
@@ -353,9 +357,7 @@ class _secondState extends State<second> {
                   ElevatedButton(
                       onPressed: () {
                         if (txtkey.currentState!.validate() == true) {
-                         Modeldata data = Modeldata(name: txtname.text,
-                         edu: txtedu.text,mno: txtmob.text,skil: txtskil.text,pskil: txtpskil.text,exp: txtexp.text,img: f1.path,
-                           gmail: txtemail.text,det: txtdet.text,lang: txtlang.text,f1: f1.path,select: select,selectcity: selectcity);
+                         Modeldata data = Modeldata(name: txtname.text,edu: txtedu.text, mno:txtmob.text, skil:txtskil.text, pskil: txtpskil.text, exp: txtexp.text, gmail:txtemail.text, det:txtdet.text, lang:txtlang.text,select: select,selectcity: selectcity,f1: f1);
 
                           Navigator.pushNamed(context, 'rd', arguments: data);
                         }
@@ -384,6 +386,12 @@ class _secondState extends State<second> {
                         ),
                       ],
                     ),
+                     LinearProgressIndicator(
+                      value: i/100,
+                       color: Colors.red,
+                       backgroundColor: Colors.black45,
+                       valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+                     ),
                 ],
               ),
             ),
