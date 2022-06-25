@@ -1,6 +1,6 @@
 import 'dart:io';
 
-class Modeldata{
+class Modeldata {
   File f1 = File("");
   String? name;
   String? edu;
@@ -15,19 +15,20 @@ class Modeldata{
   String? select;
   String? selectcity;
   Modeldata({
-    this.name,
-    this.edu,
-    this.mno,
-    this.skil,
-    this.pskil,
-    this.img,
-    this.exp,
-    this.gmail,
-    this.det,
-    this.lang,
-    this.select,
-    this.selectcity,
-    f1
+      this.name,
+      this.edu,
+      this.mno,
+      this.skil,
+      this.pskil,
+      this.img,
+      this.exp,
+      this.gmail,
+      this.det,
+      this.lang,
+      this.select,
+      this.selectcity,
+      f1
   });
-
 }
+
+

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:resume/Modalclass.dart';
 
@@ -9,8 +11,16 @@ class third extends StatefulWidget {
 }
 
 class _thirdState extends State<third> {
+
+  double i = 0;
+
   @override
   Widget build(BuildContext context) {
+
+    // Timer(Duration(seconds: 3),(){
+    //
+    // });
+
     Modeldata m2 = ModalRoute.of(context)!.settings.arguments as Modeldata;
     return SafeArea(
       child: Scaffold(
@@ -31,6 +41,12 @@ class _thirdState extends State<third> {
                   // child: Image.asset(m2.photo2),
                 ),
               ),
+              // CircularProgressIndicator(
+              //   value: i/500,
+              //   color: Colors.blue,
+              //   backgroundColor: Colors.blue,
+              // ),
+              // SizedBox(height: 15,),
               GestureDetector(
                 onTap: (){
                   //PdfGen(m2);
