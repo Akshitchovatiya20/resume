@@ -1,7 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:resume/Modalclass.dart';
-import 'package:resume/PdfGen.dart';
+import 'package:resume/screen/home/view/Modalclass.dart';
+import 'package:resume/screen/home/view/PdfGen.dart';
+import 'package:resume/utils/constant/componets/size.dart';
 
 
 class four extends StatefulWidget {
@@ -47,7 +48,7 @@ class _fourState extends State<four> {
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                           fontSize: 30),)),
-                      SizedBox(height: 15,),
+                      H(15),
                       Center(
                         child: Container(
                           height: 100,
@@ -57,21 +58,21 @@ class _fourState extends State<four> {
                           ),
                         ),
                       ),
-                      SizedBox(height: 15,),
+                      H(15),
                       Text("${m1.det}", style: TextStyle(color: Colors.white,
                           fontSize: 18),),
-                      SizedBox(height: 15,),
+                      H(15),
                       Container(alignment: Alignment.center, child: Text(
                         "Contact", style: TextStyle(color: Colors.white,
                           fontWeight: FontWeight.bold,
                           fontSize: 30),)),
-                      SizedBox(height: 15,),
+                      H(15),
                       Text("${m1.selectcity}", style: TextStyle(color: Colors.white,
                           fontSize: 18),),
-                      SizedBox(height: 15,),
+                      H(15),
                       Text("${m1.gmail}", style: TextStyle(color: Colors.white,
                           fontSize: 18),),
-                      SizedBox(height: 15,),
+                      H(15),
                       Text("${m1.mno}", style: TextStyle(color: Colors.white,
                           fontSize: 22),),
                     ],
@@ -99,10 +100,10 @@ class _fourState extends State<four> {
                             height: 1,
                             color: Colors.black,
                           ),
-                          SizedBox(height: 15,),
+                          H(15),
                           Text("${m1.edu}", style: TextStyle(
                               color: Colors.black, fontSize: 18)),
-                          SizedBox(height: 20,),
+                          H(20),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
@@ -117,10 +118,10 @@ class _fourState extends State<four> {
                             height: 1,
                             color: Colors.black,
                           ),
-                          SizedBox(height: 15,),
+                          H(15),
                           Text("${m1.select}",style: TextStyle(
                               color: Colors.black, fontSize: 18)),
-                          SizedBox(height: 20,),
+                          H(15),
                           Text(
                               "Personal Skill", style: TextStyle(
                               color: Colors.black,
@@ -131,10 +132,10 @@ class _fourState extends State<four> {
                             height: 1,
                             color: Colors.black,
                           ),
-                          SizedBox(height: 15,),
+                          H(15),
                           Text("${m1.skil}", style: TextStyle(
                               color: Colors.black, fontSize: 18)),
-                          SizedBox(height: 15,),
+                          H(15),
                           Text(
                               "Professional Skill", style: TextStyle(
                               color: Colors.black,
@@ -145,10 +146,10 @@ class _fourState extends State<four> {
                             height: 1,
                             color: Colors.black,
                           ),
-                          SizedBox(height: 15,),
+                          H(15),
                           Text("${m1.pskil}", style: TextStyle(
                               color: Colors.black, fontSize: 18)),
-                          SizedBox(height: 15,),
+                          H(15),
                           Text(
                               "Job Experience", style: TextStyle(
                               color: Colors.black,
@@ -159,10 +160,10 @@ class _fourState extends State<four> {
                             height: 1,
                             color: Colors.black,
                           ),
-                          SizedBox(height: 15,),
+                          H(15),
                           Text("${m1.exp}", style: TextStyle(
                               color: Colors.black, fontSize: 18)),
-                          SizedBox(height: 15,),
+                          H(15),
                           Text(
                               "Langauge", style: TextStyle(color: Colors.black,
                               fontWeight: FontWeight.bold,
@@ -172,7 +173,7 @@ class _fourState extends State<four> {
                             height: 1,
                             color: Colors.black,
                           ),
-                          SizedBox(height: 15,),
+                          H(15),
                           Text("${m1.lang}", style: TextStyle(
                               color: Colors.black, fontSize: 18)),
                         ],),
@@ -185,11 +186,5 @@ class _fourState extends State<four> {
         ),
       ),
     );
-  }
-
-
-  void getData()
-  {
-
   }
 }

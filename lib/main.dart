@@ -1,18 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:resume/First.dart';
-import 'package:resume/Four.dart';
-import 'package:resume/Home.dart';
-import 'package:resume/MyApp.dart';
-import 'package:resume/Resume2.dart';
-import 'package:resume/Second.dart';
-import 'package:resume/Third.dart';
+import 'package:resume/screen/home/view/First.dart';
+import 'package:resume/screen/home/view/Four.dart';
+import 'package:resume/screen/home/view/Home.dart';
+import 'package:resume/screen/home/view/MyApp.dart';
+import 'package:resume/screen/home/view/Resume2.dart';
+import 'package:resume/screen/home/view/Resume_I.dart';
+import 'package:resume/screen/home/view/Second.dart';
+import 'package:resume/screen/home/view/Third.dart';
 
 void main()
 {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'nd',
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        textTheme: const TextTheme(
+          headline1: TextStyle(fontSize: 50,color: Colors.black),
+          headline2: TextStyle(fontSize: 20,color: Colors.black),
+        )
+      ),
+      initialRoute: 'my',
       routes: {
         '/': (context) => home(),
         'my': (context) => myapp(),
@@ -21,6 +29,7 @@ void main()
         'rd': (context) => third(),
         'fr': (context) => four(),
         'r2': (context) => resume2(),
+        'r_i': (context) => resume_i(),
       },
     ),
   );
