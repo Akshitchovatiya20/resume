@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:resume/Modalclass.dart';
+import 'package:resume/screen/home/view/Modalclass.dart';
 
 class second extends StatefulWidget {
   const second({Key? key}) : super(key: key);

@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:resume/utils/constant/componets/size.dart';
 
 class first extends StatefulWidget {
   const first({Key? key}) : super(key: key);
@@ -97,7 +98,7 @@ class _firstState extends State<first> {
                   Text(")",style: TextStyle(fontSize: 27),),
                 ],
               ),
-              SizedBox(height: 15,),
+              H(15),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [

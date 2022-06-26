@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume/utils/constant/componets/size.dart';
 
 class myapp extends StatefulWidget {
   const myapp({Key? key}) : super(key: key);
@@ -87,12 +88,16 @@ class _myappState extends State<myapp> {
   }
   Widget Button(String data,Color c1)
   {
-    return Container(
-      height: 100,
-      width: 100,
-      color: c1,
-      child: Text("$data"),
-      alignment: Alignment.center,
+    return Column(
+      children: [
+        Container(
+          height: 100,
+          width: 100,
+          color: c1,
+          child: Text("$data"),
+          alignment: Alignment.center,
+        ),
+      ],
     );
   }
 }

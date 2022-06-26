@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:resume/Modalclass.dart';
-import 'package:resume/Pdf2.dart';
+import 'package:resume/screen/home/view/Modalclass.dart';
+import 'package:resume/utils/constant/componets/size.dart';
+import 'Pdf2.dart';
 
 class resume2 extends StatefulWidget {
   const resume2({Key? key}) : super(key: key);
@@ -51,7 +52,7 @@ class _resume2State extends State<resume2> {
                             fontWeight: FontWeight.bold,
                             fontSize: 28)),
                       ),
-                      SizedBox(width: 20,),
+                     W(20),
                       Text("${r2.name}", style: TextStyle(color: Colors.black, fontSize: 22),),
                     ],
                   ),
@@ -60,7 +61,7 @@ class _resume2State extends State<resume2> {
                     height: 1,
                     color: Colors.black,
                   ),
-                  SizedBox(height: 10,),
+                  H(10),
                   Row(
                     children: [
                       Container(
@@ -70,7 +71,7 @@ class _resume2State extends State<resume2> {
                             fontWeight: FontWeight.bold,
                             fontSize: 28)),
                       ),
-                      SizedBox(width: 20,),
+                     W(20),
                       Text("${r2.mno}", style: TextStyle(color: Colors.black, fontSize: 22),),
                     ],
                   ),
@@ -79,7 +80,7 @@ class _resume2State extends State<resume2> {
                     height: 1,
                     color: Colors.black,
                   ),
-                  SizedBox(height: 10,),
+                  H(10),
                   Row(
                     children: [
                       Container(
@@ -89,7 +90,7 @@ class _resume2State extends State<resume2> {
                             fontWeight: FontWeight.bold,
                             fontSize: 28)),
                       ),
-                      SizedBox(width: 20,),
+                      W(20),
                       Text("${r2.selectcity}", style: TextStyle(color: Colors.black, fontSize: 22),),
                     ],
                   ),
@@ -98,7 +99,7 @@ class _resume2State extends State<resume2> {
                     height: 1,
                     color: Colors.black,
                   ),
-                  SizedBox(height: 10,),
+                  H(10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -113,7 +114,7 @@ class _resume2State extends State<resume2> {
                     height: 1,
                     color: Colors.black,
                   ),
-                  SizedBox(height: 10,),
+                  H(10),
                   Align(
                       alignment: Alignment.center,child: Text("${r2.gmail}", style: TextStyle(color: Colors.black, fontSize: 22),)),
                   Container(
@@ -121,7 +122,7 @@ class _resume2State extends State<resume2> {
                     height: 1,
                     color: Colors.black,
                   ),
-                  SizedBox(height: 10,),
+                  H(10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -139,7 +140,7 @@ class _resume2State extends State<resume2> {
                     height: 1,
                     color: Colors.black,
                   ),
-                  SizedBox(height: 10,),
+                  H(10),
                   Padding(
                     padding: const EdgeInsets.only(left: 20),
                     child: Row(
@@ -149,7 +150,7 @@ class _resume2State extends State<resume2> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  H(10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -164,10 +165,10 @@ class _resume2State extends State<resume2> {
                     height: 1,
                     color: Colors.black,
                   ),
-                  SizedBox(height: 15,),
+                  H(15),
                   Text("${r2.select}",style: TextStyle(
                       color: Colors.black, fontSize: 18)),
-                  SizedBox(height: 15,),
+                  H(15),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -185,10 +186,10 @@ class _resume2State extends State<resume2> {
                     height: 1,
                     color: Colors.black,
                   ),
-                  SizedBox(height: 10,),
+                  H(10),
                   Align(
                       alignment: Alignment.center,child: Text("${r2.edu}", style: TextStyle(color: Colors.black, fontSize: 22),)),
-                  SizedBox(height: 10,),
+                  H(10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -206,10 +207,10 @@ class _resume2State extends State<resume2> {
                     height: 1,
                     color: Colors.black,
                   ),
-                  SizedBox(height: 10,),
+                  H(10),
                   Align(
                       alignment: Alignment.center,child: Text("${r2.pskil}", style: TextStyle(color: Colors.black, fontSize: 22),)),
-                  SizedBox(height: 10,),
+                  H(10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -227,10 +228,10 @@ class _resume2State extends State<resume2> {
                     height: 1,
                     color: Colors.black,
                   ),
-                  SizedBox(height: 10,),
+                  H(10),
                   Align(
                       alignment: Alignment.center,child: Text("${r2.lang}", style: TextStyle(color: Colors.black, fontSize: 22),)),
-                  SizedBox(height: 10,)
+                  H(10),
                 ],
               ),
             ),
@@ -239,29 +240,3 @@ class _resume2State extends State<resume2> {
     );
   }
 }
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: Column(
-// children: [
-// Align(
-// alignment: Alignment.topRight,
-// child: Container(
-// height: 140,
-// width: 130,
-// child:
-// ),
-// ),
-// Column(
-// mainAxisAlignment: MainAxisAlignment.start,
-// children: [
-// Row(
-// children: [
-// Text("Name : ",style: TextStyle(color: Colors.blue, fontSize: 22,fontWeight: FontWeight.bold),),
-//
-// ],
-// )
-// ],
-// ),
-// ],
-// ),
-// ),

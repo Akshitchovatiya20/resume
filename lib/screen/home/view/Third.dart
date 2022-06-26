@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:resume/Modalclass.dart';
+import 'package:resume/screen/home/view/Modalclass.dart';
 
 class third extends StatefulWidget {
   const third({Key? key}) : super(key: key);
