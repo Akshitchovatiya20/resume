@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:resume/main.dart';
 import 'package:resume/screen/home/view/Modalclass.dart';
 import 'package:resume/screen/home/view/PdfGen.dart';
 import 'package:resume/utils/constant/componets/size.dart';
@@ -19,12 +20,19 @@ class _fourState extends State<four> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.teal,
           centerTitle: true,
           title: Text("Profile", style: TextStyle(fontSize: 30),),
           leading: IconButton(onPressed: () {
             Navigator.pop(context);
           }, icon: Icon(Icons.arrow_back)),
           actions: [
+              Switch(value: them, onChanged: (value){
+                setState((){
+                  them = value;
+                });
+                data.add(them);
+              }),
             IconButton(onPressed: () {
               setState(() {
                 PdfGen(m1);
