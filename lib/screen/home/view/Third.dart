@@ -1,6 +1,5 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
+import 'package:resume/main.dart';
 import 'package:resume/screen/home/view/Modalclass.dart';
 
 class third extends StatefulWidget {
@@ -24,7 +23,17 @@ class _thirdState extends State<third> {
     Modeldata m2 = ModalRoute.of(context)!.settings.arguments as Modeldata;
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          backgroundColor: Colors.teal,
+          actions: [
+            Switch(value: them, onChanged: (value){
+              setState((){
+                them = value;
+              });
+              data.add(them);
+            })
+          ],
+        ),
         body: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
