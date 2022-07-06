@@ -70,19 +70,6 @@ class _thirdState extends State<third> {
                    // child: Image.asset()
                 ),
               ),
-               GestureDetector(
-                 onTap: (){
-
-                 },
-                 child: Container(
-                   alignment: Alignment.center,
-                   height: 300,
-                     width: 300,
-                   color: Colors.grey.shade700,
-                   child: Image.asset("assets/image/re4.jpg"),
-                     //child: Image.asset(m2.photo3)
-                    ),
-               ),
             ],
           ),
         ),

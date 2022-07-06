@@ -27,7 +27,7 @@ class Modeldata {
       this.lang,
       this.select,
       this.selectcity,
-      f1
+   required this.f1
   });
 }
 
